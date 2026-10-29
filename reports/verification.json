@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-29T19:10:32.679592+00:00",
+  "automated_tests": {
+    "passed": 26,
+    "failed": 0,
+    "errors": 0
+  },
+  "source_hashes": {
+    "checked": 323,
+    "failed": []
+  },
+  "baseline_reproduction": "PASSED",
+  "adaptive_replay": {
+    "timestamp": "2026-10-29T19:09:00.928695+00:00",
+    "data_version": "df2a54129c689f5eae40dd9160e4182496209a00967fdd77a6b55fcbb5040fcc",
+    "source_data_changed": false,
+    "training_inputs_or_implementation_changed": false,
+    "index_action": "UNCHANGED_INDEX_REUSED",
+    "training_action": "UNCHANGED_INPUTS_RETRAINING_SKIPPED",
+    "forced": false,
+    "drift": {
+      "status": "DESCRIPTIVE_COMPARISON",
+      "previous_project_count": 257,
+      "current_project_count": 257,
+      "expected_tonnes_wasserstein_distance": 0.0,
+      "interpretation": "Distribution change, not a probability of physical risk; shared projects are not independent samples"
+    }
+  },
+  "sample_assessments": [
+    {
+      "project_id": "449",
+      "pricing_status": "ACTUARIAL_PREMIUM_NOT_ESTIMABLE",
+      "rating": "NOT_RATABLE",
+      "gemini_status": "NOT_EXECUTED_MISSING_CREDENTIAL"
+    },
+    {
+      "project_id": "667",
+      "pricing_status": "ACTUARIAL_PREMIUM_NOT_ESTIMABLE",
+      "rating": "NOT_RATABLE",
+      "gemini_status": "NOT_EXECUTED_MISSING_CREDENTIAL"
+    },
+    {
+      "project_id": "718",
+      "pricing_status": "ACTUARIAL_PREMIUM_NOT_ESTIMABLE",
+      "rating": "NOT_RATABLE",
+      "gemini_status": "NOT_EXECUTED_MISSING_CREDENTIAL"
+    },
+    {
+      "project_id": "8",
+      "pricing_status": "ACTUARIAL_PREMIUM_NOT_ESTIMABLE",
+      "rating": "NOT_RATABLE",
+      "gemini_status": "NOT_EXECUTED_MISSING_CREDENTIAL"
+    }
+  ],
+  "live_gemini_call": "NOT_EXECUTED_MISSING_CREDENTIAL",
+  "fitted_catboost_or_lstm": "NOT_EXECUTED_INSUFFICIENT_DATA"
+}

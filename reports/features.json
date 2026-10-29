@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-29T19:09:00.716072+00:00",
+  "as_of_date": "2026-10-30",
+  "projects": 257,
+  "activity_counts": {
+    "ABSORPTION_METHOD_FAMILY": 123,
+    "MIXED_OR_UNSEGREGATED": 101,
+    "REDUCTION_ONLY": 9,
+    "UNRESOLVED_METHODOLOGY": 24
+  },
+  "eligible_issuance_projects": 9,
+  "event_validation_errors": [],
+  "prohibited_targets": [
+    "aggregate issuance / registrations",
+    "current category price copied onto projects",
+    "non-issued projects labeled zero loss"
+  ],
+  "historical_snapshot_validation": "NOT_AVAILABLE: current registry snapshots cannot establish point-in-time features for past issuance"
+}

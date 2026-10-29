@@ -1,0 +1,143 @@
+{
+  "version": "candidate_2026-10-29T190653_206276+0000_df2a54129c",
+  "data_version": "df2a54129c689f5eae40dd9160e4182496209a00967fdd77a6b55fcbb5040fcc",
+  "timestamp": "2026-10-29T19:06:53.219784+00:00",
+  "training_fingerprint": "df2c19af1ffd09853653b28994da13c917f735300dba8e3a2ad2ec6624a8ccb0",
+  "candidates": [
+    {
+      "name": "catboost",
+      "target": "First-cycle annualized certified tonnes conditional on issuance",
+      "observations": 9,
+      "minimum_projects": 40,
+      "status": "INSUFFICIENT_DATA",
+      "numerically_validated": false,
+      "historical_features_verified": false,
+      "selected_features": [],
+      "reasons": [
+        "No period-matched expected-delivery or insured-loss labels identified",
+        "Not enough independent absorption-project issuance labels"
+      ],
+      "forbidden_interpretations": [
+        "Premium prediction",
+        "Default frequency",
+        "Reversal probability"
+      ]
+    },
+    {
+      "name": "lstm",
+      "status": "INSUFFICIENT_DATA",
+      "observations": 11,
+      "minimum_observations": 60,
+      "numerically_validated": false,
+      "excluded_latest_fiscal_year": [
+        {
+          "kind": "standard_issuance",
+          "category": "FOR&AGR",
+          "fiscal_year_be": 2569,
+          "fiscal_year_ce": 2026,
+          "period_start": "2025-10-01",
+          "period_end": "2026-09-30",
+          "source_id": "70177f25dca71ea8a2991848",
+          "source_url": "https://opendata.tgo.or.th/dataset/90019e9a-228c-4374-bedb-418f761a7a1a/resource/2ee69181-7498-44f9-9ea6-18ae5292884d/download/ra_03_02.csv",
+          "source_row": 179,
+          "original_values": {
+            "FY": "2569",
+            "GHG_Reduction_Credit": "67,097",
+            "GHG_Unit": "tCO2eq",
+            "Project_Type": "FOR&AGR"
+          },
+          "volume_tonnes": null,
+          "value_baht": null,
+          "minimum_price_baht_per_tonne": null,
+          "maximum_price_baht_per_tonne": null,
+          "reported_weighted_price": null,
+          "calculated_weighted_price": null,
+          "unit_warning": null,
+          "resource_last_modified": "2026-04-19T12:50:31.675279",
+          "tonnes": 67097.0
+        }
+      ],
+      "target": "Mixed Category 13 annual issuance; outside removal-only insurance prediction scope",
+      "scope_eligible": false,
+      "reason": "Not enough genuinely temporal observations; no LSTM training or forecast executed"
+    },
+    {
+      "name": "annual_baselines",
+      "status": "EXPLORATORY_ONLY",
+      "observations": 11,
+      "target": "Annual certified issuance for the mixed Category 13 population, NOT removal-only insurance losses",
+      "validation": "Expanding-window one-step backtest; candidate ranking is diagnostic and is not an independent final test",
+      "results": [
+        {
+          "model": "naive",
+          "mae": 167684.0,
+          "rmse": 235078.33811561626,
+          "n": 5
+        },
+        {
+          "model": "seasonal_naive_annual",
+          "mae": 167684.0,
+          "rmse": 235078.33811561626,
+          "n": 5
+        },
+        {
+          "model": "expanding_mean",
+          "mae": 113096.50134920634,
+          "rmse": 196400.9064052196,
+          "n": 5
+        },
+        {
+          "model": "expanding_median",
+          "mae": 117596.4,
+          "rmse": 202530.85262843288,
+          "n": 5
+        },
+        {
+          "model": "drift",
+          "mae": 174362.86666666664,
+          "rmse": 248357.4884954258,
+          "n": 5
+        }
+      ],
+      "diagnostic_best_model": "expanding_mean",
+      "excluded_latest_fiscal_year": [
+        {
+          "kind": "standard_issuance",
+          "category": "FOR&AGR",
+          "fiscal_year_be": 2569,
+          "fiscal_year_ce": 2026,
+          "period_start": "2025-10-01",
+          "period_end": "2026-09-30",
+          "source_id": "70177f25dca71ea8a2991848",
+          "source_url": "https://opendata.tgo.or.th/dataset/90019e9a-228c-4374-bedb-418f761a7a1a/resource/2ee69181-7498-44f9-9ea6-18ae5292884d/download/ra_03_02.csv",
+          "source_row": 179,
+          "original_values": {
+            "FY": "2569",
+            "GHG_Reduction_Credit": "67,097",
+            "GHG_Unit": "tCO2eq",
+            "Project_Type": "FOR&AGR"
+          },
+          "volume_tonnes": null,
+          "value_baht": null,
+          "minimum_price_baht_per_tonne": null,
+          "maximum_price_baht_per_tonne": null,
+          "reported_weighted_price": null,
+          "calculated_weighted_price": null,
+          "unit_warning": null,
+          "resource_last_modified": "2026-04-19T12:50:31.675279",
+          "tonnes": 67097.0
+        }
+      ],
+      "numerically_validated": false,
+      "reasons": [
+        "Very few backtest origins",
+        "No independent test after comparing baseline candidates",
+        "Aggregate target is mixed activity and not an insurance exposure"
+      ],
+      "annual_seasonality": "Seasonal naive with annual period 1 equals naive; no subannual seasonality inferred"
+    }
+  ],
+  "insurance_loss_model": "INSUFFICIENT_DATA",
+  "calibration_status": "No validated insured-loss frequency/severity model",
+  "feature_importance_status": "NOT_ESTIMABLE_WITH_CURRENT_LABELS"
+}

@@ -1,0 +1,327 @@
+{
+  "assessment_timestamp": "2026-10-29T19:09:14.614609+00:00",
+  "as_of_date": "2026-10-30",
+  "data_version": "df2a54129c689f5eae40dd9160e4182496209a00967fdd77a6b55fcbb5040fcc",
+  "project_id": "449",
+  "registration_number": "393",
+  "project_name": "โครงการการกักเก็บคาร์บอนในพื้นที่สวนป่าขององค์การอุตสาหกรรมป่าไม้ ระยะที่ 2",
+  "program": "Standard T-VER",
+  "activity_class": "ABSORPTION_METHOD_FAMILY",
+  "selected_output": {
+    "selection": "DIRECT_OBSERVED_CONTEXT_WITH_ABSTENTION_ON_INSURANCE_PRICE",
+    "carbon_credit_value": {
+      "status": "OBSERVED_CATEGORY_CONTEXT_ONLY",
+      "selected_value": 411.2086355813,
+      "unit": "THB/tCO2e",
+      "price_type": "Value-weighted trading price; NOT insurance premium",
+      "scope": "FOR&AGR Category 13, mixed absorption and emission-reduction activities",
+      "absorption_only_price_status": "NOT_SEPARATELY_IDENTIFIABLE",
+      "project_specific_price": null,
+      "fiscal_year_be": 2569,
+      "fiscal_period_start": "2025-10-01",
+      "fiscal_period_end": "2026-09-30",
+      "snapshot_completeness": "Latest file may be a year-to-date snapshot; not assumed full-year",
+      "observed_volume_tonnes": 375933.0,
+      "observed_value_baht": 154586896.0,
+      "reported_weighted_price": 411.2086356,
+      "observed_minimum": 55.0,
+      "observed_maximum": 3000.0,
+      "range_ratio": 54.54545454545455,
+      "range_interpretation": "Price range across trades; not a time-series volatility estimate or confidence interval",
+      "source_id": "76dbb52345b63abd87d6b70f",
+      "source_url": "https://opendata.tgo.or.th/dataset/061c3709-1cdb-4af8-85f6-4c7cc6ce2b51/resource/1d9ad8ca-70c9-4f6e-bbd5-60eacb09d70e/download/cc_02_02.csv",
+      "source_row": 8,
+      "resource_last_modified": "2026-04-27T04:06:21.771667",
+      "source_timestamp_age_days": 185,
+      "freshness": "STALE_SOURCE_TIMESTAMP",
+      "provenance": {
+        "formula": "observed_value_baht / observed_volume_tonnes",
+        "input_source_ids": [
+          "76dbb52345b63abd87d6b70f"
+        ],
+        "unit_interpretation": "Official volume header says baht; interpreted as tonnes because value/volume reconciles with per-tonne price."
+      }
+    },
+    "absorption_only_project_valuation": null,
+    "sum_insured_baht": null,
+    "insurance_premium_baht": null,
+    "pricing_status": "ACTUARIAL_PREMIUM_NOT_ESTIMABLE",
+    "selected_operational_indicator": {
+      "selection": "ABSTENTION",
+      "target": "first_cycle_annualized_certified_tonnes",
+      "value": null
+    }
+  },
+  "dynamic_risk_rating": {
+    "status": "NOT_RATABLE",
+    "category": "NOT_RATABLE",
+    "score": null,
+    "model_confidence": null,
+    "calibration": "No covered-loss or hazard calibration dataset",
+    "components": {
+      "permanence_and_reversal": {
+        "status": "UNMEASURED",
+        "score": null,
+        "requirement_context": "Premium buffer rules not assumed applicable to Standard T-VER",
+        "loss_probability": null,
+        "buffer_rate": null
+      },
+      "issuance_performance": {
+        "status": "DESCRIPTIVE_ONLY",
+        "score": null,
+        "certified_total_tonnes": 0.0,
+        "usable_issuance_events": 0,
+        "annualized_issuance_cv": null,
+        "source_id": "6b55a130e646d3fe800d7e1e",
+        "shortfall_status": "NOT_COMPARABLE_TO_CURRENT_ANNUAL_EXPECTATION"
+      },
+      "verification_and_methodology": {
+        "status": "RECORD_AVAILABLE",
+        "score": null,
+        "methodology": "T-VER-S-METH-13-03 เวอร์ชั่น 1",
+        "method_family_class": "ABSORPTION_METHOD_FAMILY",
+        "historical_version_compliance": "NOT_VERIFIED",
+        "approval_recency_days": null,
+        "latest_approval": null,
+        "exact_verification_date": null
+      },
+      "operational_status": {
+        "status": "OBSERVED",
+        "score": null,
+        "reported_status": "ดำเนินการ",
+        "crediting_end": "2033-03-03",
+        "crediting_period_ended": false
+      },
+      "market_value_exposure": {
+        "status": "CATEGORY_CONTEXT_ONLY",
+        "score": null,
+        "benchmark_baht_per_tonne": 411.2086355813,
+        "project_expected_tonnes_percentile": 100.0,
+        "percentile_peer_count": 119,
+        "percentile_interpretation": "Relative registered project size, not a loss percentile or risk score",
+        "sum_insured": null
+      },
+      "liquidity_and_valuation_uncertainty": {
+        "status": "UNMEASURED_LIQUIDITY",
+        "score": null,
+        "observed_price_range_ratio": 54.54545454545455,
+        "time_series_volatility": null,
+        "bid_ask_spread": null
+      },
+      "documentation_quality": {
+        "status": "INCOMPLETE_UNDERWRITING_EVIDENCE",
+        "score": null,
+        "registry_field_completeness": 1.0,
+        "missing_registry_fields": [],
+        "independently_verified_retrieved_chunks": 8,
+        "market_source_freshness": "STALE_SOURCE_TIMESTAMP",
+        "interpretation": "Documentation completeness is not physical risk or model confidence"
+      },
+      "model_uncertainty": {
+        "status": "INSUFFICIENT_DATA",
+        "score": null,
+        "confidence": null,
+        "calibration": "NO_VALIDATED_INSURED_LOSS_MODEL"
+      }
+    },
+    "main_drivers": [
+      "Unmeasured covered reversal/delivery risk",
+      "Unpriced policy terms and insurer costs",
+      "Mixed-category valuation uncertainty",
+      "Limited temporal/project labels"
+    ],
+    "decline_reasons": [
+      "No claims/exposure or coverage-specific loss dataset identified; actuarial expected loss and premium cannot be estimated",
+      "Market benchmark pools Category 13 activities and is not a project-specific absorption price",
+      "Project hazard probabilities, covered reversal severity and actual buffer deductions are not established",
+      "Approval recency is not the date of a VVB verification report",
+      "Missing or unextracted disclosures are missing evidence, not evidence of zero risk",
+      "Historical feature vintages are unavailable; no trained model is approved from this snapshot",
+      "Official market resource timestamp exceeds configured freshness limit; fetching today does not refresh the observation date",
+      "Gemini factor review was not completed; no AI-reviewed factor acceptance is claimed"
+    ]
+  },
+  "factor_evidence": [
+    {
+      "code": "T-VER-S-METH-13-03",
+      "family_code": "T-VER-S-METH-13-03",
+      "locator": "table[0]/row[1]",
+      "source_id": "e2e497b13b47da7070334ccf",
+      "title": "การปลูกป่าอย่างยั่งยืน โครงการขนาดใหญ่"
+    }
+  ],
+  "derivation_provenance": {
+    "record_completeness": {
+      "formula": "present registry fields / 11",
+      "source_ids": [
+        "6a7d5f7e9be704962c76a22b"
+      ]
+    },
+    "date_differences": {
+      "formula": "as_of_date minus official registration/approval date",
+      "source_ids": [
+        "6a7d5f7e9be704962c76a22b"
+      ]
+    },
+    "size_percentile": {
+      "formula": "100 × count(peer expected annual tonnes <= project expected annual tonnes) / peer count",
+      "source_ids": [
+        "0217a1eef03f5c7ededc236e",
+        "021d7933b38b0c9af67772e5",
+        "030bb4ee16b3f0b3a9acf2eb",
+        "0ac0272bb60ad48170311cc6",
+        "0b089127d2e6813de1f84eb4",
+        "0bc34632dd609f8ab461ffbf",
+        "0e2e38c9a2312e0af71248d8",
+        "0e910d8c58367d7b96bfe798",
+        "10cf23d1228cdff25dac2207",
+        "1330a8de4ccc20860b9b1d63",
+        "13bd55734aaba350958c9f7f",
+        "1565722d00fa322a0d11ae08",
+        "15fddedccc61e950ebb5dd79",
+        "170747864ab302ef8cce987b",
+        "170d4bcd89e3e7bf1aa99e08",
+        "172dffd1963679a14ef534b9",
+        "1a7214b551a48228a85b63e4",
+        "1c1f780eb8cf2c96d6b6c5c0",
+        "2600eac8e8ddbcc88743c907",
+        "2729a0c7020049441548c049",
+        "2c2b9384cf2c882257f9706d",
+        "2c62fd7c33b946134af81eb6",
+        "2dc4aba8bb31f7ee69ff2369",
+        "30c6ff38d50583a17e2dc0eb",
+        "31cf80bb75bd98a92f51d22d",
+        "32d2d9193137ce804a966466",
+        "339e5d920e45a081ce73e74e",
+        "33ac4d6f6ff5438acdd134f7",
+        "34ce25a1f7d973e1c60c5129",
+        "35ea13fc032c791ae94974b9",
+        "370654fd5d3c935d5aa56b1b",
+        "3de2dbb7b0d443185a83d96c",
+        "3e8f6e38f4c6d06f55c4c1d2",
+        "3ec1c765aeb84e611f6a5311",
+        "46c99ddcbbbbedf71bbe239f",
+        "4a52c4645aa2804a9e1d75e6",
+        "4b7c3fc7dfd0eb08de424e46",
+        "4cdf70a3891219947e08781d",
+        "50ee2dc5bf13a7203e5fa29b",
+        "55e0ff02607fa76ac76396af",
+        "5723d0d459152ea543ce4ce8",
+        "59388cf0b02542781d599509",
+        "5e0638e2fddaf9bf97e1270c",
+        "5f42833696509c2a3f5a7202",
+        "616a4424a161d7823a76034e",
+        "62a697c081f3dc2de3bb9e11",
+        "63b426afc664791f6ead6204",
+        "649273757cc80953d4e0ad7c",
+        "65afe58a7fe50a98a612be78",
+        "65df44f04ea2954da9f2a3d6",
+        "6664054eec61909e50b594b7",
+        "6a7d5f7e9be704962c76a22b",
+        "6ae3d3494e4927f50bda2d1a",
+        "6b0cb8f57a85f18134a2416f",
+        "71a62fbd9869d98b69eb1e30",
+        "75848da9d70e6e5fa4b75e12",
+        "7c5c833c401f5104df353edd",
+        "7d376ce337bbbb76197578e6",
+        "7fadd491a798448e87507369",
+        "83f718a14b2b0e1c7ab63db6",
+        "8552461cbf42a11f4468a5ae",
+        "89dd1def1c2c54f859faae91",
+        "8ae8475cfe5b44d915eadaaa",
+        "8b7566e08be094855d8bbfe5",
+        "8be20d129519ceeac050e980",
+        "8cb9fcbeb4927dfb1ee2ef5b",
+        "8fbf6a0dcb70c2e54b7b2512",
+        "905928b1379c75a704aa681e",
+        "9140de10915c75e654e80aca",
+        "93e718809c2f8cf52068d34f",
+        "94798c03efdd500ced41623c",
+        "983c1fda9f51e567de75dbff",
+        "999bd40d92098a0d1b5a320e",
+        "9c8a333daad0962052ac09f3",
+        "9de775dee049889d73291854",
+        "a22149c2a18644811084f707",
+        "a4179572aca11edbcb45d824",
+        "a6d3c7c37312e7f4d44ff372",
+        "a81bfd0f97864d5a907711f6",
+        "acc43e73a732f25fd0870161",
+        "b01ff8d9e5524f0644376c59",
+        "b64e626f2efc6bbc21418699",
+        "b86aa2751b18434d859eec09",
+        "b8c9c866e187bae5a84ba273",
+        "bc9cb6b24d938e838b3c80c7",
+        "bfb784e3c181eed02cf4493a",
+        "c263c2e5e267dcf2808a0d97",
+        "c45b030698613bdd4f56cdd0",
+        "c57087ae38fab4b821c17a9f",
+        "c5ac33a5b0f6e27768798763",
+        "c86afe6f04c5c7ea3263e7d1",
+        "c9a6a03b1f4ffc6c2ca27ea0",
+        "ca0e56dddccff3cd7da54d8f",
+        "cb6e37bad441fa49531c114d",
+        "d0de76e970639e8e69e0ba11",
+        "d12348cadaac8e1bcb4237d2",
+        "d57cad363b62552b95dbd066",
+        "d5bd9ac40d257740a5df2e8b",
+        "d7bf87dba58f14548d49c198",
+        "dc0db259491a91cb0108b2a8",
+        "de789c3b867485888468e8a5",
+        "e03edce23a747399c2a688dc",
+        "e2d66fa15703eb63bc0cade6",
+        "e60c55700f44d7a69a0ac2bc",
+        "e778a9a6ddd22e4242a0a0ec",
+        "e999c959762d557b6fbffa99",
+        "eca7d01aeab31d88d49db6a3",
+        "ecbe56f216a5fd64342d28ff",
+        "ee46fc1ddaef38b9236c2e28",
+        "f0a2e4a3275a42e9ecb261ce",
+        "f12405299aabe3e76e2a064c",
+        "f1737300735405a537a5f686",
+        "f20e9d3c744944bc3a4e43a4",
+        "f26b9781110da963a26e5c90",
+        "f5641d624c836adb99540775",
+        "fad008111a5552039a7f647a",
+        "fd8a8febe246fa7de324d173",
+        "fea90724e46d4f66a35367f4",
+        "ffe389520c8402d9d488258e"
+      ]
+    }
+  },
+  "gemini_quality_review_status": "NOT_EXECUTED_MISSING_CREDENTIAL",
+  "factor_quality_review": {
+    "status": "NOT_EXECUTED_MISSING_CREDENTIAL",
+    "decision": null,
+    "selected_factors": [],
+    "factors": [],
+    "warnings": [
+      "Gemini factor review was not completed; no AI-reviewed factor acceptance is claimed"
+    ],
+    "additional_evidence": []
+  },
+  "warnings": [
+    "No claims/exposure or coverage-specific loss dataset identified; actuarial expected loss and premium cannot be estimated",
+    "Market benchmark pools Category 13 activities and is not a project-specific absorption price",
+    "Project hazard probabilities, covered reversal severity and actual buffer deductions are not established",
+    "Approval recency is not the date of a VVB verification report",
+    "Missing or unextracted disclosures are missing evidence, not evidence of zero risk",
+    "Historical feature vintages are unavailable; no trained model is approved from this snapshot",
+    "Official market resource timestamp exceeds configured freshness limit; fetching today does not refresh the observation date",
+    "Gemini factor review was not completed; no AI-reviewed factor acceptance is claimed"
+  ],
+  "unpriced_components": [
+    "Covered loss frequency",
+    "Covered loss severity",
+    "Policy exclusions, deductible and limit",
+    "Buffer interaction and recoveries",
+    "Expenses",
+    "Risk/capital margin"
+  ],
+  "audit_artifacts": {
+    "retrieval": "evidence_449.json",
+    "quality_review": "qc_project_449.json",
+    "model_comparison": "model_evaluation.json",
+    "source_inventory": "source_inventory.json",
+    "numeric_lineage": "numeric_lineage.csv"
+  }
+}

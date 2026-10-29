@@ -1,0 +1,18 @@
+factor,measurement_class,interpretation
+methodology_and_version,OBSERVED,Published project methodology; current snapshots are not historical feature vintages
+status,OBSERVED,Published operating status; not evidence that no reversal occurred
+expected_annual_tonnes,OBSERVED,Registered annual expectation; not verified tonnes
+certified_tonnes,OBSERVED,Listing amount matched by project and issuance cycle
+location_and_ownership,OBSERVED,"Published text; no geocoded fire, flood or land-title probabilities inferred"
+project_age_and_crediting_duration,DERIVED,Date differences from official fields
+verification_recency,UNVERIFIED,Approval recency is available; exact VVB verification date is not consistently extracted
+issuance_approval_recency,DERIVED,"Days since latest approved certified cycle, not since the VVB report date"
+annualized_issuance,DERIVED,Certified-cycle tonnes × 365.2425 / inclusive monitoring days; not an insurance loss
+issuance_variation,DERIVED,CV only with at least three nonoverlapping comparable monitoring intervals; still subject to area/version changes
+market_value_and_price_range,OBSERVED,Category 13 mixed-activity aggregate; not removal-only and not project-specific
+market_price_range_ratio,DERIVED,"Maximum/minimum price; cross-sectional range, not temporal volatility or standard deviation"
+liquidity,UNVERIFIED,"Annual volume alone cannot estimate turnover, bid-ask spreads or exit time"
+record_completeness_and_source_age,DERIVED,Documentation measurements; not physical risk
+non_permanence_and_buffer,UNVERIFIED,Official applicability guidance exists; actual project hazard and buffer deduction not consistently extracted
+matched_expected_vs_actual_shortfall,UNVERIFIED,Current annual expectations are not period-matched PDD delivery commitments
+insured_loss_frequency_and_severity,UNVERIFIED,No permitted claims/exposure or covered-loss dataset identified
